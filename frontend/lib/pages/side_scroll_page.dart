@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f8e25de17c034cd0a44cd0c14c1798eaeeda9cde10124b8909614ddcdf9ff27
-size 501
+import 'package:flutter/material.dart';
+import 'package:frontend/molecules/appbar.dart';
+import 'package:frontend/molecules/horizontal_list.dart';
+
+class SideScrollPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: CustomAppBar(),// AppBar에 표시할 제목
+        body: Container(
+          height: 250, // 원하는 높이로 설정
+          child: SideScrollEffect(),
+        ),
+      ),
+    );
+  }
+}
