@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f0a5b5f500e2a6198ef4ce89a9dfbd78aac82e5052f3251337f51d084ff2132
-size 315
+package com.picky.auth;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class AuthApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(AuthApplication.class, args);
+    }
+
+}
