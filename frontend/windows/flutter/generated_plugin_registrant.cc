@@ -1,11 +1,3 @@
-//
-//  Generated file. Do not edit.
-//
-
-// clang-format off
-
-#include "generated_plugin_registrant.h"
-
-
-void RegisterPlugins(flutter::PluginRegistry* registry) {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:be5817922be3c3db3d93d3520f8d8cb866d34f67df13c64e92b1319952cb569e
+size 527
