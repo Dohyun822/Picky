@@ -1,22 +1,3 @@
-package com.picky.business.log.domain.entity;
-
-import lombok.*;
-
-import javax.persistence.*;
-import java.time.LocalDate;
-
-@Entity
-@Table(name="log_search")
-@Getter
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@ToString
-//검색했을 때, 찍는 로그
-public class LogSearch {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String keyword;
-    private LocalDate createdAt;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b6bdba243f046a27b34840e2af0fe93d30237db0c1810edd5aede444ebb31ea
+size 527
