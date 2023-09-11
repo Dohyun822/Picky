@@ -1,23 +1,3 @@
-package com.picky.business.log.domain.entity;
-
-import lombok.*;
-
-import javax.persistence.*;
-import java.time.LocalDateTime;
-
-@Entity
-@Table(name="log_product")
-@Getter
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@ToString
-//특정 상품 조회했을 때, 찍는 로그
-public class LogProduct {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private Long userId;
-    private Long productId;
-    private LocalDateTime createdAt;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:90284d58a691f9681401763419f1d98cb0b00edd9fb11afd22a12cd960e46d11
+size 564
