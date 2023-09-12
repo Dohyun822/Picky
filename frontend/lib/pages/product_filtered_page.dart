@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:518c1de97a44f2ea885f1dd9f9536a9ba9787ea727772f9db251a04d9f144e63
-size 408
+import 'package:flutter/material.dart';
+import 'package:frontend/molecules/vertical_list.dart';
+import 'package:frontend/molecules/appbar.dart';
+
+class ProductFilteredPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: CustomAppBar(),// AppBar에 표시할 제목
+        body: VerticalList(),
+      ),
+    );
+  }
+}
