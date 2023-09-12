@@ -1,16 +1,3 @@
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${DB_URL}/business
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
-  jpa:
-    hibernate:
-      ddl-auto: create
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-        show-sql: true
-        format_sql: true
-  server:
-    port: 8080
+version https://git-lfs.github.com/spec/v1
+oid sha256:482752ee712a2d1fb16e9bfb4d745893fa15ee19a5a413b11cbb647be2e8a3f6
+size 579
