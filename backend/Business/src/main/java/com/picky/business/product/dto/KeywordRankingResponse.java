@@ -1,15 +1,3 @@
-package com.picky.business.product.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Builder
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-//검색어 랭킹
-public class KeywordRankingResponse {
-    private String keyword;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:72acc443a6ee52670d702aa3c499a2fc3125bd222cb29f40223355644c3a82a3
+size 293
