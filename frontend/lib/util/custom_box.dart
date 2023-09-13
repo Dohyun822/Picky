@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6d251bd2a532b81859e44e82365074fe51bb7519b406e5c689b9a4cc20b83dd
-size 269
+import 'package:flutter/material.dart';
+
+class CustomBox extends StatelessWidget {
+  const CustomBox({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 10,
+      color: Color.fromRGBO(241, 241, 241, 1.0),
+    );
+  }
+}

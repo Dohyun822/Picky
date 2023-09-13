@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:15c766b585ddfb321d32e9732a4107923371c5be15903c7bb54cb58fc386dc88
-size 323
+import 'package:flutter/material.dart';
+
+class CheckList extends StatefulWidget {
+  const CheckList({super.key});
+
+  @override
+  State<CheckList> createState() => _CheckListState();
+}
+
+class _CheckListState extends State<CheckList> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
