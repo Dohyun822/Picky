@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:400a8a2c0bf36c14b09751076dc3175612ac9ba005a9b2dc96132efca24b2f7b
-size 443
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
