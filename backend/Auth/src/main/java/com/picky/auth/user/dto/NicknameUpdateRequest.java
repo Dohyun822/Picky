@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f1782a299c7a5eef0d1e6eb99d23e47d564ad0e9c9ac58d38fe8aaeebfecf89
-size 355
+package com.picky.auth.user.dto;
+
+import lombok.Builder;
+import lombok.Getter;
+
+@Getter
+public class NicknameUpdateRequest { // 닉네임 수정 요청 DTO
+
+    String preNickname;
+    String postNickname;
+
+    @Builder
+    public NicknameUpdateRequest(String preNickname, String postNickname) {
+        this.preNickname = preNickname;
+        this.postNickname = postNickname;
+    }
+}

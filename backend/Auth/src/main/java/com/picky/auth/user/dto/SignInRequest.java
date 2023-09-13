@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc645e1c8dd9ff5a2d69dae5ca8dcb6f06b6956feb8ef15432a05339f7432232
-size 476
+package com.picky.auth.user.dto;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.NotBlank;
+
+@Getter
+@NoArgsConstructor
+public class SignInRequest { // 로그인 요청 DTO
+
+    @NotBlank
+    private String password;
+    @NotBlank
+    private String nickname;
+
+    @Builder
+    public SignInRequest(String password, String nickname) {
+        this.password = password;
+        this.nickname = nickname;
+    }
+}

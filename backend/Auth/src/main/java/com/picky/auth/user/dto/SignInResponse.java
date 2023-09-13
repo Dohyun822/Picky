@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aaa7a38ad2ba0f937f4edaee537202a9d06181f98a2b2bad02c0407e001a8f04
-size 486
+package com.picky.auth.user.dto;
+
+import lombok.*;
+
+@Getter
+@NoArgsConstructor
+@ToString
+public class SignInResponse { // 로그인 응답 DTO
+
+    private String uuid;
+    private String nickname;
+    private String fcmToken;
+    private String accessToken;
+
+    @Builder
+    public SignInResponse(String uuid, String nickname, String fcmToken, String accessToken) {
+        this.uuid = uuid;
+        this.nickname = nickname;
+        this.fcmToken = fcmToken;
+        this.accessToken = accessToken;
+    }
+}

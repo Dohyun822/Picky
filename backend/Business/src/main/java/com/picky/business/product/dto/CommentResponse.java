@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc69c10b09f7f90813be53dee6f8e22235f4d4e991ec681c6f15ae7e454840cf
-size 348
+package com.picky.business.product.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+//댓글 가져오기
+public class CommentResponse {
+    private String nickname;
+    private String content;
+    private String createdAt;
+}
