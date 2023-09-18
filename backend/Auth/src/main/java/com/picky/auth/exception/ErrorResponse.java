@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b21341112fdec71294241e5bd30f47dbe1c2633bece7835f1c33b014a834c754
-size 498
+package com.picky.auth.exception;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import org.springframework.http.HttpStatus;
+
+@Getter
+@AllArgsConstructor
+public class ErrorResponse {
+    private final ExceptionCode exceptionCode;
+    private final HttpStatus httpStatus;
+    private final String message;
+
+    public static ErrorResponse of(ExceptionCode exceptionCode) {
+        return new ErrorResponse(exceptionCode, exceptionCode.getHttpStatus(), exceptionCode.getMessage());
+    }
+}
