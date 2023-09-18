@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03d4cd3dec9d3f63d7aa15dc5959dce1da379093224c38a587fa9930b1ea94a6
-size 411
+package com.picky.business.combination.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+//조합 목록을 조회하는 dto
+public class CombinationListResponse {
+    private Long combinationId;
+    private String combinationName;
+    private int totalPrice;
+    private int totalKcal;
+
+}
