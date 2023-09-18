@@ -1,7 +1,3 @@
-class FilterTag {
-  //선택된 카테고리 표시,
-  //선택된 옵션 삭제 버튼
-  // 가격 원
-  // 행사여부
-  // 편의점 별
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:010f148b042144e6b06f7e71f0276c833c767f2a1d5de794ae8507c3127b7a81
+size 1259
