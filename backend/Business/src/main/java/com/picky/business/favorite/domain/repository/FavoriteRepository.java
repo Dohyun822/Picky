@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c0eeae801d24fb91d2a1a690dabbba28ad2ed2a496087ccd62a97c1c366c1b4
-size 403
+package com.picky.business.favorite.domain.repository;
+
+import com.picky.business.favorite.domain.entity.Favorite;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface FavoriteRepository extends JpaRepository<Favorite, Long> {
+    List<Favorite> findByUserIdAndIsDeletedFalse(Long userId);
+
+    Favorite findByUserIdAndProductId(Long userId, Long productId);
+
+}
