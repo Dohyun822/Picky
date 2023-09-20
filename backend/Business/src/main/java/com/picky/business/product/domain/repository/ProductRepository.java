@@ -1,13 +1,3 @@
-package com.picky.business.product.domain.repository;
-
-import com.picky.business.product.domain.entity.Product;
-import org.springframework.data.jpa.domain.Specification;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
-
-@Repository
-public interface ProductRepository extends JpaRepository<Product,Long> {
-    List<Product> findAll(Specification<Product> specification);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:56e83154c46c00a31cb6139a42707caaaafb41d961c75c9b2e5bc6f9d3c213f3
+size 749
