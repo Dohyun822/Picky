@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3ac03bb52c75f6dccbd3ca0c0ed0e4c83812abcbe9b12847c973dde20a06969
-size 419
+package com.picky.business;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
+@SpringBootApplication
+@EnableJpaAuditing
+public class BusinessApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(BusinessApplication.class, args);
+    }
+
+}

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:360009d5c708fe4b8bf9b083d17ae758bb77f273c22c2c08b066957759fd8e9b
-size 268
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/pyeonsik.iml" filepath="$PROJECT_DIR$/.idea/pyeonsik.iml" />
+    </modules>
+  </component>
+</project>
