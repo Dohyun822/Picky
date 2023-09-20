@@ -1,16 +1,3 @@
-package com.picky.auth.user.domain.repository;
-
-import com.picky.auth.user.domain.entity.User;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.Optional;
-
-public interface UserRepository extends JpaRepository<User, Long> {
-
-    Optional<User> findByUuid(String uuid);
-
-    Optional<User> findByNickname(String nickname);
-
-    boolean existsByNickname(String nickname);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4135f593035560b487dd7d468379e55c49d9d3b682e59fdc7c8e85616d8b204c
+size 403
