@@ -1,15 +1,3 @@
-package com.picky.business.product.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Builder
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-//댓글 작성
-public class CommentWriteRequest {
-    private String content;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:06682baf0ae20994b15ae1a7475a924ce88f1b7286698e64dd86877048ee331c
+size 287
