@@ -1,18 +1,3 @@
-package com.picky.notificationproducer.producer.dto;
-
-import com.picky.notificationproducer.producer.domain.entity.Notification;
-import lombok.Builder;
-import lombok.Getter;
-
-@Getter
-@Builder
-public class NotificationResponse {
-
-    private String message;
-
-    public static NotificationResponse toResponse(Notification notification) {
-        return NotificationResponse.builder()
-                .message(notification.getMessage())
-                .build();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:43d443394784184e2eb31964914449063ce39e85fcc988d636cf4200cda41bea
+size 559
