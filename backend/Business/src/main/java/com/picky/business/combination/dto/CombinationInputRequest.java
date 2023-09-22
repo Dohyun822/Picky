@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96d5453e3e59af6a54791ef3f2dcb92f7b095b6d6dce3914de959b15a5316aec
-size 376
+package com.picky.business.combination.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+//조합 생성, 수정
+public class CombinationInputRequest {
+    private String combinationName;
+    private List<ProductInfo> products;
+
+}
