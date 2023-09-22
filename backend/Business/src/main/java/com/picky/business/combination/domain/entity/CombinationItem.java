@@ -1,24 +1,3 @@
-package com.picky.business.combination.domain.entity;
-
-import lombok.*;
-
-import javax.persistence.*;
-
-@Entity
-@Table(name = "combination_item")
-@Getter
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@ToString
-public class CombinationItem {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private int amount;
-    private Boolean isDeleted = false;
-
-    @ManyToOne
-    @JoinColumn(name = "combination_id")
-    private Combination combination;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1c2a217d8a9166ce7dc0a0a82bce6bafe2e075ddbae94124ecebbf263d96ad25
+size 623
