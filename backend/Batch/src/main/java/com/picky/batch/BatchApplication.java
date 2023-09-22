@@ -1,13 +1,3 @@
-package com.picky.batch;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class BatchApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(BatchApplication.class, args);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cbfd5db44b995927db69de0cb8308b757f15520cd950ebb86f54b97fa00617f3
+size 306
