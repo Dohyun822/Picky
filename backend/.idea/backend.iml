@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-  <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="d3ef16a4-53a3-4c55-b35c-a664a5cf9659" />
-  </component>
-</module>
+version https://git-lfs.github.com/spec/v1
+oid sha256:1febb1ab5d80742dbfd20cc98c00a4ab416a3f80b8c5e3def3d43eeb872ad3f8
+size 472
