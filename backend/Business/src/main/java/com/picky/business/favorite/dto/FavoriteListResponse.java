@@ -1,17 +1,3 @@
-package com.picky.business.favorite.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-public class FavoriteListResponse {
-    private Long productId;
-    private String productName;
-    private String filename;
-    private int price;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa65a4deb9d6636f8e9dff37f91b447038e9fa467b2e54a0bf9507a78d8adc73
+size 357
