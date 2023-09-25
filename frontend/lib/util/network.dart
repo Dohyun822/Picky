@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29c1b26b272cf6c8e274f0491b1714ba9079a65aa2da233dd3bff0ac1a367f2c
-size 342
+import 'package:flutter/material.dart';
+
+class Network {
+  static Map<String, String> getHeader(String token) {
+    return {
+      "Access-Control-Allow-Origin": "*",
+      'Content-Type': 'application/json',
+      'Accept': '*/*',
+      'Authorization': '$token',
+    };
+  }
+
+  static String apiUrl = "http://j9a505.p.ssafy.io:8881/api/";
+}
