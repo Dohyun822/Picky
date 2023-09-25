@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a0221862413cd6d7156f5c1e55faf26c622cbe3f8d0605547eb60d4e9977c30
-size 354
+package com.picky.business.product.domain.repository;
+
+import com.picky.business.product.domain.entity.ConvenienceInfo;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface ConvenienceRepository extends JpaRepository<ConvenienceInfo,Long> {
+    Optional<ConvenienceInfo> findByProductId(Long id);
+}
