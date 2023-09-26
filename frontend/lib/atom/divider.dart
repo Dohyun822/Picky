@@ -1,19 +1,3 @@
-import 'package:flutter/material.dart';
-
-class LineDivider extends StatelessWidget {
-  const LineDivider({Key? key});
-
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-          padding: EdgeInsets.only(left: 15),
-          child: Divider(
-            height: 10.0,
-            color: Colors.grey[850],
-            thickness: 1.0,
-            endIndent: 20.0,
-          ),
-        );
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:026e78b7674307562c5307722d67f3f46254083e8466db3ed394a5dae5ed557c
+size 413
