@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:48ddf81a57bc195bda840a842efa4e87829ab1c8bfa8bd70143c45c36e4ab1d5
-size 335
+package com.picky.business.combination.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+//조합 생성, 수정에 들어갈 정보
+public class ProductInfo {
+    private Long productId;
+    private int amount;
+}
