@@ -1,11 +1,3 @@
-package com.picky.notificationproducer.scheduling.domain.repository;
-
-import com.picky.notificationproducer.scheduling.domain.entiity.User;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-
-public interface UserRepository extends JpaRepository<User, Long> {
-
-    List<User> findAllByIsDeletedFalse();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:73c8871cc050e91898be93359b3fa219d248b62432238acdc3ebdd0712de85cb
+size 340
