@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:375630eef1a2019c30a137fe8a5c66f16fc21fdf1ad272c78d995b8ccafbb09d
-size 301
+package com.picky.business.combination.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CombinationCreateItem {
+    private Long productId;
+    private int amount;
+}
