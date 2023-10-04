@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b2bc35e57226dde7777e338c5ea7d19ad5534e7b27e82295b9231330c44273b0
-size 264
+{
+  "file_generated_by": "FlutterFire CLI",
+  "purpose": "FirebaseAppID & ProjectID for this Firebase app in this directory",
+  "GOOGLE_APP_ID": "1:781710249511:ios:2b0c14465ef0dbd7cd8802",
+  "FIREBASE_PROJECT_ID": "a505-ca3ca",
+  "GCM_SENDER_ID": "781710249511"
+}
