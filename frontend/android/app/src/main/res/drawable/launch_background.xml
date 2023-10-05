@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8109e711e0ae36a4521a9a9c7bcb0d180dfe3175de8533eda8b6c6606ed993a
-size 461
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modify this file to customize your launch splash screen -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/white" />
+
+<!--     You can insert your own image assets here -->
+<!--    <item>-->
+<!--        <bitmap-->
+<!--            android:gravity="center"-->
+<!--            android:src="@drawable/supermarket" />-->
+<!--    </item>-->
+</layer-list>
