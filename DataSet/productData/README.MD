@@ -1,7 +1,3 @@
-## ConvAllProduct 
-편의점의 행사정보, 모든 품목을 크롤링한 데이터
-<BR>
-<BR>
-<BR>
-## DBAllProduct 
-식품영양정보 데이터베이스의 모든 품목
+version https://git-lfs.github.com/spec/v1
+oid sha256:c2979f820808a2dab7c5a99c3c5c8b1eec45c1b102c24fc4e1f13a342ed10a6c
+size 400
