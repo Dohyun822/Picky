@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:933d7bf5d93bbf8684dbe39d06453238de71dbed10bf752885f27f5c19a08a08
-size 445
+package com.picky.business.log.domain.repository;
+
+import com.picky.business.log.domain.entity.LogProduct;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.time.LocalDate;
+
+@Repository
+public interface LogProductRepository extends JpaRepository<LogProduct, Long> {
+    boolean existsByUserIdAndProductIdAndCreatedAt(Long userId, Long productId, LocalDate createdAt);
+}

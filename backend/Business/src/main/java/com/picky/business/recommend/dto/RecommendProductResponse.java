@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24920d15aecffe18a1a2b3c65edfd92f65ac6ff90eff618e8f94bb5aa680e6fb
-size 386
+package com.picky.business.recommend.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+//추천상품 Response
+public class RecommendProductResponse {
+    private Long productId;
+    private String productName;
+    private int price;
+    private String filename;
+}

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6789bada39ed442a1e47f60dd7a5728f27aaa8f64204d317d85c4d56a87b24f
-size 338
+package com.picky.business.log.domain.repository;
+
+import com.picky.business.log.domain.entity.LogCombinationItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface LogCombinationItemRepository extends JpaRepository<LogCombinationItem, Long> {
+}
