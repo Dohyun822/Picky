@@ -1,12 +1,3 @@
-package com.picky.business.combination.domain.repository;
-
-import com.picky.business.combination.domain.entity.Combination;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
-
-@Repository
-public interface CombinationRepository extends JpaRepository<Combination, Long> {
-    List<Combination> findByUserIdAndIsDeletedFalse(Long userId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d49b0877210fd8631f6565e9fa7cee4ac4642ae6a345c3ef096da625300de7a6
+size 423
