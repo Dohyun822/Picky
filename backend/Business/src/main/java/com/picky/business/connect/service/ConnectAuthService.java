@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d8899f2b24e83abc05bb5f0bcc9cc5aced0a08ef1d0b8308c383b240bfd9e51
-size 1195
+package com.picky.business.connect.service;
+
+import com.picky.business.exception.InvalidTokenException;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Slf4j
+@Service
+@RequiredArgsConstructor
+public class ConnectAuthService {
+    private final RestTemplate restTemplate;
+    //TODO 서버에 배포시 localhost -> auth server docker image name으로 변경 필요
+    private static final String BASEURL = "http://j9a505.p.ssafy.io:8882/api/auth";
+
+    public Long getUserIdByAccessToken(String accessToken) {
+        String url = BASEURL + "/id/" + accessToken;
+        try {
+            return Long.parseLong(restTemplate.getForObject(url, String.class));
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new InvalidTokenException("유효하지 않은 토큰입니다");
+        }
+    }
+
+    public String getNicknameByAccessToken(String accessToken) {
+        String url = BASEURL + "/nickname/" + accessToken;
+        log.info("url:-------------------" + url);
+        return restTemplate.getForObject(url, String.class);
+    }
+}

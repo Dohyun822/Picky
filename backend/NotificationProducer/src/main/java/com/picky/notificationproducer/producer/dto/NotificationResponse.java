@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b45ccf62d70d35ff49563eae5eba50d43ca15cbdcfc9656692676cc670234e22
-size 525
+package com.picky.notificationproducer.producer.dto;
+
+import com.picky.notificationproducer.producer.domain.entity.Notification;
+import lombok.Builder;
+import lombok.Getter;
+
+import java.util.HashMap;
+import java.util.List;
+
+@Getter
+@Builder
+public class NotificationResponse {
+
+    private List<String> message;
+
+    public static NotificationResponse toResponse(Notification notification) {
+        return NotificationResponse.builder()
+                .message(notification.getMessage())
+                .build();
+    }
+}

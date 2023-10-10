@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:783be578d78b2221c988c42d3d852abd6d9c753cf49943e3841967c78440e347
-size 558
+package com.picky.business.log.domain.entity;
+
+import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+
+import javax.persistence.*;
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "log_search")
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@ToString
+//검색했을 때, 찍는 로그
+public class LogSearch {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column
+    private String keyword;
+
+    @Column(name = "created_at")
+    @CreatedDate
+    private LocalDateTime createdAt;
+}

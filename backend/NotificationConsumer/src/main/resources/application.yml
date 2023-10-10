@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b9d283b50607ab78c14f662462ba04ffbf4976616a241eafb54a488cd7c3478e
-size 607
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DB_URL}/auth
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+
+kafka:
+  consumer:
+    bootstrap-servers: ${KAFKA_URL}:9092
+    group-id: notification
+    auto-offset-reset: earliest
+    key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+    value-serializer: com.picky.notificationconsumer.kafka.config.CustomSerializer
+
+server:
+  port: 8083

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66193d2971313298af18b3b738abaee418ab4690c077eb43f6d57a7c6a2d2836
-size 589
+package com.picky.business.combination.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+//조합 detail
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CombinationDetailResponse {
+    private String combinationName;
+    private Long combinationId;
+    private int totalPrice;
+    private int totalKcal;
+    private double totalCarb;
+    private double totalProtein;
+    private double totalFat;
+    private double totalSodium;
+    private List<ProductInfo> combinationItems;
+
+}

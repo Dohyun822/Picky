@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f485b0b3afba3a34731a60ba0caf8c47601ec5da8a0ddc7288f9bb84045e075
-size 605
+import 'package:flutter/material.dart';
+
+class ProductImage extends StatelessWidget {
+  static const String defaultFilename = 'assets/images/wip.jpg';
+
+  final String filename;
+  const ProductImage({super.key, required this.filename});
+
+  @override
+  Widget build(BuildContext context) {
+    return FadeInImage(
+        placeholder: const AssetImage(defaultFilename),
+        image: NetworkImage(filename),
+        imageErrorBuilder:(context, error, stackTrace) {
+          return Image.asset(defaultFilename,
+              fit: BoxFit.cover
+          );
+        },
+        fit: BoxFit.cover
+    );
+  }
+}

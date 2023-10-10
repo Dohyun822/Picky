@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf8811b6e422720c420c7ae8037520d0ad675e68e40ef6f8594fddf5d521afa4
-size 615
+package com.picky.notificationconsumer.fcm.domain.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+
+@Builder
+@AllArgsConstructor
+@Getter
+public class FcmMessage {
+    private boolean validateOnly;
+    private Message message;
+
+    @Builder
+    @AllArgsConstructor
+    @Getter
+    public static class Message {
+        private Notification notification;
+        private String token;
+    }
+
+    @Builder
+    @AllArgsConstructor
+    @Getter
+    public static class Notification {
+        private String title;
+        private String body;
+        private String image;
+    }
+
+}

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ef06d1f8105aed849423f927c3c056f518769771f838493aa7031d907921c9a
-size 547
+package com.picky.business.combination.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+//조합 내부의 item들 정보
+public class CombinationItemResponse {
+    private Long productId;
+    private String productName;
+    private int price;
+    private String filename;
+    private int kcal;
+    private double carb;
+    private double protein;
+    private double fat;
+    private double sodium;
+    private int amount;
+}
