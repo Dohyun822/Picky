@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fe37e06e065f693f13a4155191b8f4d5a95a9a4a49c89ae56c0be44ec62ef957
-size 1045
+
+class ProductSimple {
+  // productId : Long,
+  // productName : String,
+  // price : Int,
+  // filename : String,
+  // badge : String,
+  // isFavorite: Boolean
+  final int productId;
+  final String productName;
+  final int price;
+  final String filename;
+  final List<dynamic>? convenienceCode;
+  final List<dynamic>? promotionCode;
+  final bool? isFavorite;
+
+  ProductSimple({
+    required this.productId,
+    required this.price,
+    required this.filename,
+    required this.productName,
+    this.convenienceCode,
+    this.promotionCode,
+    this.isFavorite,
+  });
+
+  factory ProductSimple.fromJson(Map<String, dynamic> json) {
+
+    if (json['productName'] == Null) {
+      print('-==-------------got null');
+      print(json);
+    }
+    return ProductSimple(
+      productId: json['productId'],
+      price: json['price'],
+      filename: json['filename'],
+      productName: json['productName'],
+      convenienceCode: json['convenienceCode'],
+      promotionCode: json['promotionCode'],
+      isFavorite: json['isFavorite'],
+    );
+  }
+}

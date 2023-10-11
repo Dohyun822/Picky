@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f2f481dee8b62747c9e852b0c39fc73c74e48b51df27022afd3fa8e67ae1e16
-size 632
+package com.picky.business.product.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+//product 등록
+public class ProductRegistRequest {
+    private String productName;
+    private int price;
+    private String filename;
+    private int category;
+    private int weight;
+    private int kcal;
+    private double carb;
+    private double protein;
+    private double fat;
+    private double sodium;
+    private List<Integer> convenienceCodes;
+    private List<Integer> promotionCodes;
+
+}

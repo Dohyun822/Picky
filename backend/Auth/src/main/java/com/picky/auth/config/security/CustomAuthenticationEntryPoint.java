@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59a415f41e33effd1ad7da129011038ae4c971e4df3e9dea2d3b6a642ef3d0c5
-size 888
+package com.picky.auth.config.security;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.AuthenticationEntryPoint;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@Slf4j
+public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint {
+
+
+    @Override
+    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException)
+            throws IOException {
+
+        Exception exception = (Exception) request.getAttribute("exception");
+        log.info("[commence] 인증 실패로 {} 발생", exception.toString());
+
+        // 응답값을 설정해야 할 필요가 없을 경우
+        response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
+    }
+}

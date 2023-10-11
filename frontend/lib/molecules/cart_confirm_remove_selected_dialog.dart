@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d7d0ca1d7ed988649dd516c8a49cc6082a532dd7d5605c5b9d1e985af05ac55
-size 821
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../models/cart.dart';
+
+class CartConfirmRemoveSelectedDialog extends StatelessWidget {
+  const CartConfirmRemoveSelectedDialog({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    var cart = context.watch<Cart>();
+    return AlertDialog(
+      content: Text('선택한 ${cart.numberOfSelected}개 상품을 삭제하겠습니까?'),
+      actions: <Widget>[
+        TextButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: const Text('취소'),
+        ),
+        TextButton(
+          onPressed: () {
+            cart.removeSelected();
+            Navigator.pop(context);
+          },
+          child: const Text('삭제'),
+        ),
+      ],
+    );
+  }
+}

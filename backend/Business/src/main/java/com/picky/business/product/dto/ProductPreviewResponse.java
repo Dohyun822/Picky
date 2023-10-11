@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b49df6170b585b3006af4fa11a8d48fd5fef2542f6aef803bf8091f1d08f7533
-size 624
+package com.picky.business.product.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+//제품 미리보기 -> 검색해서 제품 리스트들 보여줄 때, 나타날 정보들
+public class ProductPreviewResponse {
+    private Long productId;
+    private String productName;
+    private int price;
+    private String filename;
+    private Boolean isFavorite;
+    private List<Integer> convenienceCode;
+    private List<Integer> promotionCode;
+    private Long favoriteCount;
+
+}
