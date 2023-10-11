@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed499ff3ea4e6ab081c4add6eaf6e313e30ac5f2479f97b0bd35257c8c476d40
-size 601
+package com.picky.business.product.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+//product update
+public class ProductUpdateRequest {
+    private String productName;
+    private Integer price;
+    private String filename;
+    private Integer category;
+    private Integer weight;
+    private Integer kcal;
+    private Double carb;
+    private Double protein;
+    private Double fat;
+    private Double sodium;
+    private int convenienceCode;
+    private int promotionCode;
+}

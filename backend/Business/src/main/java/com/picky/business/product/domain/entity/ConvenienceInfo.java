@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d4e505605dd76f8f566d6f8a2ae781af678d4f1ca37dfba30b5d2762971af297
-size 645
+package com.picky.business.product.domain.entity;
+
+import lombok.*;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "convenience_info")
+@Getter
+@Setter
+@AllArgsConstructor
+@Builder
+@NoArgsConstructor
+public class ConvenienceInfo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "product_id")
+    private Long productId;
+    @Column(name = "convenience_code")
+    private int convenienceCode;
+    @Column(name = "promotion_code")
+    private int promotionCode;
+
+    @ManyToOne
+    @JoinColumn(name = "product_id", insertable = false, updatable = false)
+    private Product product;
+}

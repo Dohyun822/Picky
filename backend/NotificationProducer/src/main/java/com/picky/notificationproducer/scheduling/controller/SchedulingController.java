@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b991f8fced127849aa2af1e5c9b272f5143fac8fdf9e3b90ae01eb6356f01f09
-size 702
+package com.picky.notificationproducer.scheduling.controller;
+
+import com.picky.notificationproducer.scheduling.service.SchedulingService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/scheduling")
+public class SchedulingController {
+
+    private final SchedulingService schedulingService;
+
+    public SchedulingController(SchedulingService schedulingService) {
+        this.schedulingService = schedulingService;
+    }
+
+    @GetMapping
+    public void sendUserList() {
+        schedulingService.getFCMTokenOfAll();
+    }
+}

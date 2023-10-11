@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6453071bf0859d35b12b10083b50cb4e7422cfb942806dd3add34735910a1d22
-size 714
+package com.picky.business;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+@SpringBootTest
+class BusinessApplicationTests {
+    @Autowired
+    private RedisTemplate<String, Object> redisTemplate;
+
+    @Test
+    public void testConnection() {
+        redisTemplate.opsForValue().set("myKey1", "myValue123");
+        Object value = redisTemplate.opsForValue().get("myKey1");
+        System.out.println(value);
+        assertNotNull(redisTemplate.getConnectionFactory());
+    }
+
+
+}

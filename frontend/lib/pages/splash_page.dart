@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64fe769f0ebaba5b754c40e52c29d0b3045fb790568fc34556490308034dfed1
-size 675
+import 'package:flutter/material.dart';
+import 'package:extended_image/extended_image.dart';
+
+// 스플래쉬스크린 클래스 생성
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.white,
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            ExtendedImage.asset(
+              'assets/images/supermarket.png',
+              width: 300,
+              height: 300,
+              // fit: BoxFit.cover,
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
