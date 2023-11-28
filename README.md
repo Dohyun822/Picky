@@ -8,14 +8,11 @@
 
 1. [프로젝트 소개](#-프로젝트-소개)
 2. [목차](#-목차)
-2. [STACKS](#-stacks)
-3. [UCC영상](#-ucc영상)
-4. [문서](#-문서)
+3. [사용 기술 스택](#-사용-기술-스택)
+4. [발표자료](#-발표-자료)
 5. [팀원 역할](#-팀원-역할)
-7. [주요 기능](#-주요-기능)
-8. [Git 컨벤션](#-git-컨벤션)
-9. [Code 컨벤션](#-code-컨벤션)
-10. [프로젝트 구조](#-프로젝트-구조)
+6. [주요 기능](#-주요-기능)
+10. [프로젝트 구조](#-DOCS)
 11. [주요 기능 미리보기](#-주요-기능-미리보기)
 12. [산출물](#-산출물)
 13. [Awards](#-awards)
@@ -25,39 +22,51 @@
 ### ✔️ 사용 기술 스택
 
 ### B/E
+<div style="display: flex;">
 <img src="https://spring.io/img/projects/spring-boot.svg" alt="Spring Boot" width="40px"/>
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Java" width="40px"/>
 <img src="https://cdn.icon-icons.com/icons2/2389/PNG/512/gradle_logo_icon_145224.png" alt="Gradle" width="40px"/>
 <img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python" width="40px"/>
 <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_spark_logo_icon_170560.png" alt="Apache Spark" width="40px"/>
+</div>
 
 ### F/E
+<div style="display: flex;">
 <img src="https://cdn.iconscout.com/icon/free/png-256/free-flutter-2038877-1720090.png" alt="Flutter" width="40px"/>
+</div>
+
+### Data Processing / Crawling
+<img src="https://github.com/Dohyun822/Picky/assets/98006584/607386bc-a351-4b1b-b3f8-dfab1c2206cc" alt="Pandas" width="40px"/>
+<img src="https://github.com/Dohyun822/Picky/assets/98006584/29aca44c-1a78-4134-a728-397d3b7cb16c" alt="Selenium" width="40px"/>
 
 ### Storage
+<div style="display: flex;">
 <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mysql_original_wordmark_logo_icon_146417.png" alt="MySQL" width="40px"/>
-<img src="https://assets.stickpng.com/images/584830b5cef1014c0b5e4a9c.png" alt="MongoDB" width="40px"/>
+<img src="https://github.com/Dohyun822/Picky/assets/98006584/45bda481-3929-4242-aa3c-b527f213a7bb" alt="MongoDB" width="40px"/>
 <img src="https://cdn.icon-icons.com/icons2/2248/PNG/512/apache_kafka_icon_138937.png" alt="Apache Kafka" width="40px"/>
+</div>
 
 ### Dev-Ops
+<div style="display: flex;">
 <img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="Docker" width="40px"/>
+</div>
 
 ### Infra
+<div style="display: flex;">
 <img src="https://static-00.iconduck.com/assets.00/aws-ec2-icon-423x512-iaajemnx.png" alt="AWS EC2" width="40px"/>
 <img src="https://static.invertase.io/assets/social/firebase-logo.png" alt="Firebase" width="40px"/>
 <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_zookeeper_logo_icon_169571.png" alt="Apache Zookeeper" width="40px"/>
+</div>
 
 ### Collaboration
+<div style="display: flex;">
 <img src="https://static-00.iconduck.com/assets.00/gitlab-icon-2048x1885-1o0cwkbx.png" alt="GitLab" width="40px"/>
 <img src="https://25322853.fs1.hubspotusercontent-eu1.net/hub/25322853/hubfs/STAGIL_January2022/Images/jira-software-logo-jira-logo-hd-png.png?width=360&name=jira-software-logo-jira-logo-hd-png.png" alt="Jira" width="40px"/>
 <img src="https://cdn.icon-icons.com/icons2/2389/PNG/512/notion_logo_icon_145025.png" alt="Notion" width="40px"/>
 <img src="https://cdn-icons-png.flaticon.com/512/906/906391.png" alt="MatterMost" width="40px"/>
-
-### Data Processing / Crawling
-<img src="/uploads/01e7725db48b967e32642201e4bdbce0/icons8-pandas-48.png" alt="Pandas" width="40px"/>
-<img src="/uploads/36c868e419ba5b163a77ae74490b4f98/icons8-selenium-100.png" alt="Selenium" width="40px"/>
-
-
+</div>
+    
+<br>
 
 ### ✔️ 발표 자료
 
@@ -91,14 +100,15 @@
 
 ### ✔️ BE
 
-- 임준성
-    - [BE] 크롤러 구현, 데이터 정제, 전처리 담당, UCC 제작
-- 김기헌
-    - [BE] 아키텍쳐 설계, Business 서버 구축, 관련 API 개발
 - 권도현
     - [BE] 데이터 분산 처리 담당, 데이터 파이프라인 구축, 추천 시스템 구축, 관련 API 개발
+- 김기헌
+    - [BE] 아키텍쳐 설계, Business 서버 구축, 관련 API 개발
 - 김유진
     - [BE] : Auth, Notification 서버 구축, 관련 API 개발
+- 임준성
+    - [BE] 크롤러 구현, 데이터 정제, 전처리 담당, UCC 제작
+
 
 ---
 
@@ -106,45 +116,46 @@
 
 ### ✔️ 시스템 아키텍처
 
-<img width=50% src="/uploads/8968f73393b91769976382e76c548a6c/편식_아키텍처.png">
+<img width=50% src="https://github.com/Dohyun822/Picky/assets/98006584/81b19988-cd9e-46ae-89f3-047def597b1a">
 
 ### ✔️ ER-Diagram
 
-<img width=50% src="/uploads/e5aa3467013f139a3b8d7e3468a510f5/erd.png">
+<img width=50% src="https://github.com/Dohyun822/Picky/assets/98006584/80d5ac59-df34-4883-ba5d-39858b1c2b08">
 
 
 ---
 
 ## 📱 UI/UX
 
-### ✔️ Figma 목업
+### ✔️ 어플리케이션 UI
 
+
+<h2>홈페이지<h2>
+<img width=25% src="https://github.com/Dohyun822/Picky/assets/98006584/98c9b6c9-1956-47d4-bb14-26ee3fec2078">
+
+<h2>검색 페이지<h2>
+<img width=25% src="https://github.com/Dohyun822/Picky/assets/98006584/ab326afa-0ce6-42c4-9ebd-f0d4c7c57435">
+
+<h2>상품목록 페이지<h2>
+<img width=25% src="https://github.com/Dohyun822/Picky/assets/98006584/621df8cc-aab0-4cec-8d85-bc075af0993e">
+
+<h2>상세보기 페이지<h2>
+<img width=25% src="https://github.com/Dohyun822/Picky/assets/98006584/2fb4feaf-9857-4195-b404-eee46119e609">
+
+<h2>상품조합 페이지<h2>
+<img width=25% src="https://github.com/Dohyun822/Picky/assets/98006584/af380ab8-5e78-4682-a0a2-0b38713b4865">
+
+<h2>로그인 페이지<h2>
+<img width=25% src="https://github.com/Dohyun822/Picky/assets/98006584/ab79c970-4674-434c-b08c-dca578cd59c6">
+
+<h2>스크랩 페이지<h2>
+<img width=25% src="https://github.com/Dohyun822/Picky/assets/98006584/482c7fcb-de33-467f-9850-3579506ef680">
+
+### ✔️ Figma 목업
 
 [편식 화면 설계도 Figma](https://www.figma.com/file/GxTwXO3ZQBauj2lkI0X8t6/%ED%99%94%EB%A9%B4-%EC%84%A4%EA%B3%84%EB%8F%84?type=design&node-id=0%3A1&mode=design&t=fsk9VuUYjyr0LKOS-1)
 
 <img width=10% src="/uploads/6979f81d0c91e3f7f9e053f0b035a988/moooookup.gif">
 
-
-### ✔️ 어플리케이션 UI
-
-
-<h2>홈페이지<h2>
-<img width=10% src="/uploads/ada84a3d580e42f93369cf4b26826ea9/homepage.gif">
-
-<h2>검색 페이지<h2>
-<img width=10% src="/uploads/d82312ae9ec18a137338db03b0c82708/search.gif">
-
-<h2>상품목록 페이지<h2>
-<img width=10% src="/uploads/41bd6c16a5ef4ff45163c2410ab4e05d/filtered_list.gif">
-
-<h2>상세보기 페이지<h2>
-<img width=10% src="/uploads/d9369bf6ddff57eb442d7c5df2a72c2b/product_detail.gif">
-
-<h2>상품조합 페이지<h2>
-<img width=10% src="/uploads/62ad486612fbe4bbb47b52b8312a5b6a/combination.gif">
-
-<h2>로그인 페이지<h2>
-<img width=10% src="/uploads/b0342b0dd66d86b130bd0a7d4b29343f/login.gif">
-
-<h2>스크랩 페이지<h2>
-<img width=10% src="/uploads/f302da74c9f6611f657a9b0387817b10/scrapbook.gif">
+## 🏆 Awards
+- 🥇삼성청년SW아카데미 2학기 특화PJT 1등 수상
